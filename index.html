@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <title>SayHi</title>
@@ -8,17 +9,18 @@
   <link rel="stylesheet" href="css/normalize.css" media="screen">
   <meta name="viewport" content="width=device-width, initial- scale=1">
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/typed.js"></script>
 </head>
+
 <body>
-  <div class="content" id="preLoader">
+  <div class="presentacion centrarVerticalYHorizontal" id="preLoader">
     <h1>HOLA</h1>
     <span id="typed"></span>
   </div>
-  <div id="web">
+  <div id="web" class="full-height">
     <nav class="navbar navbar-light navbar-expand-lg navigation up">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -26,16 +28,16 @@
       <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
         <ul class="navbar-nav w-100 justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">INICIO</a>
+            <a class="nav-link" href="#home">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">NOSOTROS</a>
+            <a class="nav-link" href="#us">NOSOTROS</a>
           </li>
           <li class="nav-item">
             <img src="images/logo.png" alt="">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICIOS</a>
+            <a class="nav-link" href="#services">SERVICIOS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACTO</a>
@@ -43,15 +45,19 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="full-height inicio" id="home">
-        <p>
-          <span>
-            Hola, somos Say Hi, una agencia de comunicación, pero por sobre<br>
-            todo amantes de la creatividad. Abocamos nuestros servicios a la<br>
+    <div class="container full-height">
+      <div class="row full-height inicio col-xs-12" id="home">
+        <p class="centrarVerticalYHorizontal">
+          <span class="textoResaltado">
+            Hola, somos Say Hi, una agencia de comunicación, pero por sobre
+            todo amantes de la creatividad. Abocamos nuestros servicios a la
             contrucción de marcas que trascienden e inspiran.
           </span>
         </p>
+      </div>
+      <div class="row full-height nosotros col-xs-12" id="us">
+      </div>
+      <div class="row full-height servicios col-xs-12" id="services">
       </div>
     </div>
   </div>

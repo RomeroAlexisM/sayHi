@@ -11,6 +11,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 100%;
 }
 
 /*
@@ -40,7 +41,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -89,10 +90,11 @@ textarea {
    ========================================================================== */
 body {
   background-color: #0091e2;
+  height: 100%;
 }
 
 .navigation {
-  /* position: fixed; */
+  position: fixed;
   top: 1em;
   width: 100%;
   margin: 0 auto;
@@ -124,88 +126,134 @@ body {
 
 .inicio {
   text-align: center;
-  padding-top: 15%;
   font-size: 1.5em;
   font-weight: bold;
+  display: grid;
 }
-.inicio span  {
-    color: white;
-    background-image: linear-gradient(120deg, #fe2550 0%, #fe2550 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: 0 88%;
 
+.inicio p {
+  top: 60%;
 }
+
+.textoResaltado {
+  color: white;
+  background-image: linear-gradient(120deg, #fe2550 0%, #fe2550 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-position: 0 88%;
+}
+
+.nosotros {}
+
+.servicios {}
 
 .full-width {
   width: 100%;
 }
 
-.right {
-  /* float: right; */
-}
-
-.left {
-  float: left;
-}
-
-.up {
-  z-index: 10;
-}
-
 .full-height {
   height: 100%;
 }
-.content {
-    display: table;
-    margin: 20px auto;
-    text-align: center;
-    width: 70%;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
+
+.centrarVerticalYHorizontal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.presentacion {
+  display: table;
+  margin: 20px auto;
+  text-align: center;
+  width: 70%;
+  top: 40%;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* Codigo para el cursor parpadeo animado */
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+  0% {
+    opacity: 1;
   }
 
-  /* Codigo para el cursor parpadeo animado */
-  .typed-cursor{
+  50% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
   }
-  @-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
   }
-  @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+  50% {
+    opacity: 0;
   }
-  @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+  100% {
+    opacity: 1;
   }
-  @-ms-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
   }
-  @-o-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+  50% {
+    opacity: 0;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 /* ==========================================================================
    Helper classes
